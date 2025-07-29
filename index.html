@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robinson Films</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:hero */
+.hero-section {
+    background-color: var(--color-primary);
+    padding-top: 36px;
+    padding-bottom: 88px;
+    color: var(--color-text-light);
+}
+.hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.logo-container {
+    border: 4px solid var(--color-text-dark);
+    background-color: var(--color-background);
+    padding: 28px 59px;
+}
+.logo-text {
+    color: #6a6565;
+    font-size: 20px;
+    font-weight: 500;
+}
+.header-contact-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-align: left;
+}
+.social-icons {
+    display: flex;
+    gap: 8px;
+}
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+.contact-text {
+    font-size: 24px;
+    line-height: 36px;
+}
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.hero-text-content {
+    max-width: 844px;
+}
+.hero-title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.28px;
+    color: var(--color-text-dark);
+    margin-bottom: 24px;
+}
+.hero-subtitle {
+    font-size: 24px;
+    line-height: 36px;
+}
+.hero-gallery {
+    display: flex;
+    gap: 24px;
+}
+.gallery-left {
+    flex: 1.73; /* 843 / 485 */
+}
+.gallery-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.gallery-right-bottom {
+    position: relative;
+}
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 6px solid var(--color-background);
+}
+.gallery-overlay {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    text-align: left;
+}
+.overlay-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 12px;
+}
+.watch-button {
+    display: inline-block;
+    background-color: var(--color-secondary);
+    color: var(--color-text-dark);
+    padding: 10px 32px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 500;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 1200px) {
+    .hero-gallery {
+        flex-direction: column;
+    }
+    .gallery-overlay {
+        position: static;
+        margin-top: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .hero-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .header-contact-info {
+        flex-direction: column;
+    }
+    .hero-title {
+        font-size: 48px;
+    }
+    .hero-subtitle, .contact-text {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
+
+/* CSS for section section:social */
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+.social-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.social-card-image {
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.social-card-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    padding: 20px;
+}
+.social-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.social-card-text h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+.social-card-text p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: var(--color-text-subtle);
+}
+
+/* CSS for section section:about */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.about-text {
+    flex: 1;
+    max-width: 516px;
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.about-description, .about-contact p {
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-text-subtle);
+}
+.about-contact h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 8px;
+}
+.about-image {
+    flex: 1;
+    max-width: 704px;
+    border-radius: 8px 0 0 8px;
+    overflow: hidden;
+}
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .about-text, .about-image {
+        max-width: 100%;
+    }
+    .about-image {
+        border-radius: 8px;
+    }
+}
+
+/* CSS for section section:reviews */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+.review-card {
+    background-color: var(--color-background);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 48px;
+}
+.review-card blockquote {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.review-author img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review-author p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/* CSS for section section:contact */
+.contact-section {
+    background-color: var(--color-background-alt);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.contact-container .section-title {
+    margin-bottom: 0;
+}
+.contact-button {
+    background-color: var(--color-text-dark);
+    color: #a5f5ff;
+    padding: 20px 32px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    transition: opacity 0.3s;
+}
+.contact-button:hover {
+    opacity: 0.9;
+}
+
+/* CSS for section section:footer */
+.footer-section {
+    background-color: var(--color-background);
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.footer-divider {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin-bottom: 48px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-brand {
+    font-size: 24px;
+    line-height: 36px;
+}
+.footer-social-icons {
+    display: flex;
+    gap: 8px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.footer-social-icons a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-social-icons img {
+    width: 24px;
+    height: 24px;
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="hero" class="hero-section">
+    <div class="container">
+        <header class="hero-header">
+            <div class="logo-container">
+                <p class="logo-text">Robinson Films</p>
+            </div>
+            <div class="header-contact-info">
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn">
+                        <img src="images/23_21.svg" alt="LinkedIn Icon">
+                    </a>
+                    <a href="#" aria-label="Video">
+                        <img src="images/23_24.svg" alt="Video Icon">
+                    </a>
+                </div>
+                <p class="contact-text">
+                    Helena Robinson - Videographer, Editor, Content Creator.<br>
+                    <a href="mailto:helenarobinson0@gmail.com" class="link-style">helenarobinson0@gmail.com</a> - 
+                    <a href="tel:07856322925" class="link-style">07856322925</a>
+                </p>
+            </div>
+        </header>
+        <div class="hero-main">
+            <div class="hero-text-content">
+                <h1 class="hero-title">Robinson Films.</h1>
+                <p class="hero-subtitle">
+                    To see more of my portfolio follow the link to my vimeo profile:<br>
+                    <a href="https://vimeo.com/user94518840" class="link-style">https://vimeo.com/user94518840</a>
+                </p>
+            </div>
+            <div class="hero-gallery">
+                <div class="gallery-left">
+                    <img src="images/ec39eb220fb0e34578887d3c9f96f1fce1660910.png" alt="Band performing in a recording studio" class="gallery-img">
+                </div>
+                <div class="gallery-right">
+                    <img src="images/39cb075186fe62774b62cab99aa9eadf407993dd.png" alt="Drum kit in a recording studio" class="gallery-img">
+                    <div class="gallery-right-bottom">
+                        <img src="images/b772e49f9058299f19086ddf5e7a30beddc39d03.png" alt="Musicians playing in a studio" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <p class="overlay-text">Promotional Music Video for wedding/events band.</p>
+                            <a href="#" class="watch-button">Watch Here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="social" class="section-padding" style="background-color: var(--color-secondary);">
+    <div class="container">
+        <h2 class="section-title">Social Media Content</h2>
+        <div class="social-grid">
+            <div class="social-card">
+                <div class="social-card-image" style="background-image: url('images/fb25d8f983ea2e776c241974d5ef8eed56b84417.png');">
+                    <img src="images/d8a81cea132bca2c4cde120ea691ab9cc1532431.png" alt="Civico logo" class="social-card-logo">
+                </div>
+                <div class="social-card-text">
+                    <h3>Civico</h3>
+                    <p>Click the icon to watch</p>
+                </div>
+            </div>
+            <div class="social-card">
+                <div class="social-card-image" style="background-color: #c2ed55;">
+                    <img src="images/e6475d8f8ec396845f2a9e8acfa27e0c5ec5c3bb.png" alt="John Simpson Art piece" class="social-card-logo">
+                </div>
+                <div class="social-card-text">
+                    <h3>John Simpson Art</h3>
+                    <p>Click the icon to watch</p>
+                </div>
+            </div>
+            <div class="social-card">
+                <div class="social-card-image" style="background-color: #dc0079;">
+                    <img src="images/cd2cf4a796be0fb55f4cd02e1695148fff66d45e.png" alt="Diana Brook Yoga pose" class="social-card-logo">
+                </div>
+                <div class="social-card-text">
+                    <h3>Diana Brook Yoga</h3>
+                    <p>Click the icon to watch</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="section-padding">
+    <div class="container about-container">
+        <div class="about-text">
+            <h2 class="section-title">Helena Robinson</h2>
+            <div class="about-content">
+                <p class="about-description">Shooting, Editing and Graphics, I handle the full process and make sure your content looks sharp, professional, and stand-out on any platform. Whether you're launching something new or just need fresh content, get in touch below!</p>
+                <div class="about-contact">
+                    <h3>How to contact me</h3>
+                    <p>For quotes or enquiries please drop me an email at <a href="mailto:helenarobinson0@gmail.com" class="link-style">helenarobinson0@gmail.com</a> or give me a call at <a href="tel:07856322925" class="link-style">07856322925</a>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="images/b0b99fb9307e2f3bd3c665af83fb4fe5c626bc7c.png" alt="A portrait of Helena Robinson at her desk.">
+        </div>
+    </div>
+</section>
+<section id="reviews" class="section-padding" style="background-color: var(--color-primary);">
+    <div class="container">
+        <h2 class="section-title" style="color: var(--color-text-dark);">Client Reviews</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <blockquote>“Helena is currently CIVICO’s principal freelance videographer and film editor. She produces all of our LinkedIn video short with exceptional skill and attention to the details”</blockquote>
+                <div class="review-author">
+                    <img src="images/9829131e19dfa0a843625aaa20c82bbbdfe46e3b.png" alt="Avatar of Dan Cremin">
+                    <p>Dan Cremin - CIVICO</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <blockquote>“Creative, short and informative content. Helena has been great to work with, super reliable and efficient”</blockquote>
+                <div class="review-author">
+                    <img src="images/f55edcdb7284802cff33a4938189568c0f804d39.png" alt="Avatar of John Simpson">
+                    <p>John Simpson - John Simpson Art</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <blockquote>“(Helena) has a razor sharp understanding of how the video content algorithms of various social platforms work and ensures our media posts are optimised for full value.”</blockquote>
+                <div class="review-author">
+                    <img src="images/9829131e19dfa0a843625aaa20c82bbbdfe46e3b.png" alt="Avatar of Dan Cremin">
+                    <p>Dan Cremin - CIVICO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact-section">
+    <div class="container contact-container">
+        <h2 class="section-title">Contact me</h2>
+        <a href="mailto:helenarobinson0@gmail.com" class="contact-button">
+            helenarobinson0@gmail.com<br>07856322925
+        </a>
+    </div>
+</section>
+<footer class="footer-section">
+    <div class="container">
+        <hr class="footer-divider">
+        <div class="footer-content">
+            <p class="footer-brand">Robinson Films</p>
+            <!--merged image-->
+            <div class="footer-social-icons">
+                <a href="#" aria-label="LinkedIn">
+                    <img src="images/1_963.svg" alt="LinkedIn Icon">
+                </a>
+                <a href="#" aria-label="Video">
+                    <img src="images/29_44.svg" alt="Video Icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
